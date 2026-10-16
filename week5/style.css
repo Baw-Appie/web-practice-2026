@@ -16,7 +16,8 @@ header {
 }
 
 section:first-child {
-  background: pink;
+  background: radial-gradient(circle, pink, white);
+  text-align: center;
 }
 
 section {
