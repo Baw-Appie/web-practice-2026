@@ -1,0 +1,59 @@
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 16px;
+  z-index: 9999;
+}
+
+section:first-child {
+  background: pink;
+}
+
+section {
+  border: 1px solid gray;
+  padding: 16px;
+}
+
+section > h2 {
+  margin: 0;
+}
+
+section + section {
+  margin-top: 16px;
+}
+
+.product-list {
+  display: grid;
+  gap: 16px;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 0;
+}
+
+.product-list > li {
+  position: relative;
+  /*border: 1px solid gray;*/
+  padding: 16px;
+}
+
+.product-list > li > span.badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  background-color: yellow;
+}
+
+.product-list > li > strong {
+  display: block;
+}
