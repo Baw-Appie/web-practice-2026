@@ -77,19 +77,20 @@
         display: none;
     }
     .gnb.open {    
-        display: flex;
-        justify-content: flex-end;
+        display: block;
     }
     .gnb-list {
-        width: 128px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 256px;
+        height: 100vh;
         display: flex;
-        justify-content: flex-end;
-        align-items: end;
         gap: 16px;
         flex-direction: column;
         border: #777 solid 1px;
-        border-radius: 8px;
         padding: 16px;
+        background: var(--bg);
     }
 
 
